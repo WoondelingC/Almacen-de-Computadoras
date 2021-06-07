@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Almacen de compras Geek</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tiendas Geek</h1>
+        <img id="logo" src="images/logo de computadora sprint1.png" alt="loco de computadora"
+            title="logo de computadora">
+    </header>
+    <main>
+        <div id="compras">
+            <label for="compra">Cantidad de computadores comprados</label>
+            <input id="cantidad" type="number" value="number" min="0" max="100">
+            <input type="submit" name="calclular" id="boton" value="calcular">
+        </div>
+        <div id="tabla-contenido">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo PC</th>
+                        <th>Color del equipo</th>
+                        <th>Precio del equipo</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><img src="images/pc3.jpg" alt="modelo1" title="PC-Modelo" class="images"></td>
+                    <td>Negro</td>
+                    <td>$820.000</td>
+                </tr>
+                <tr>
+                    <td><img src="images/descarga.jpg" alt="Modelo2" title="Pc-modelo" class="images"></td>
+                    <td>Rojo</td>
+                    <td>$820.000</td>
+
+            </table>
+        </div>
+
+        <div id="cuenta">
+            <h3>Orden de compra</h3>
+            <label for="valor">Valor de compra</label>
+            <input type="text" id="valor" class="valores" readonly>
+            <label for="descuento">Valor de descuento</label>
+            <input type="text" id="descuento" class="valores" readonly>
+            <label for="total">Total</label>
+            <input type="text" id="total" class="valores" readonly>
+        </div>
+    </main>
+    </header>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
